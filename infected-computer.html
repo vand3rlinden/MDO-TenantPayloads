@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #d9534f;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            padding: 10px 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            color: #fff;
+            background-color: #d9534f;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Security Alert</h1>
+        </div>
+        <div class="content">
+            <h2>Your Computer May Be Infected</h2>
+            <p>Dear ${firstName},</p>
+            <p>We have detected unusual activity on your computer that indicates a potential security threat. It appears that your computer may have been infected with malware.</p>
+            <p>Please do not ignore this message. It is important that you take immediate action to prevent any further damage or data loss.</p>
+            <p><strong>What you need to do:</strong></p>
+            <ol>
+                <li>Disconnect your computer from the internet to prevent the spread of the malware.</li>
+                <li>Do not attempt to fix the issue yourself, as this may worsen the situation.</li>
+                <li>Contact our IT support team immediately for assistance.</li>
+            </ol>
+            <a href="${phishingUrl}" class="btn">Report to IT Team</a>
+            <p>Thank you for your prompt attention to this matter.</p>
+            <p>Sincerely,</p>
+            <p>The IT Security Team</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 [Your Company]</p>
+        </div>
+    </div>
+</body>
+</html>

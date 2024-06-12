@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuSign Document Sharing</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #0d47a1;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .document-info {
+            background-color: #fafafa;
+            padding: 20px;
+            border-left: 5px solid #0d47a1;
+            margin-bottom: 30px;
+        }
+        .document-info h2 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #0d47a1;
+        }
+        .document-info p {
+            margin: 0;
+            font-size: 16px;
+            color: #555555;
+        }
+        .footer {
+            background-color: #fafafa;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #0d47a1;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            DocuSign
+        </div>
+        <div class="content">
+            <p>Hello ${firstName},</p>
+            <p>${manager} has sent you a document to sign:</p>
+            <a href="${phishingUrl}" class="button">Review Document</a>
+            <p>If you have any questions, please contact the sender directly.</p>
+        </div>
+        <div class="footer">
+            © DocuSign, Inc. All rights reserved.<br>
+            221 Main Street, Suite 1000, San Francisco, CA 94105
+        </div>
+    </div>
+</body>
+</html>

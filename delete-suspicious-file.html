@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .header img {
+            max-width: 100px;
+        }
+        .message {
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #0078d4;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+    <title>Suspicious File Alert</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <img src="https://example.com/logo.png" alt="Defender for Endpoint">
+            </div>
+            <div class="message">
+                <h2>Alert: Suspicious File Detected</h2>
+                <p>Dear ${firstName},</p>
+                <p>We have detected a suspicious file on your computer that may pose a security threat. To ensure the safety of your system and data, we recommend taking immediate action.</p>
+                <p>Please log in to <strong>Defender for Endpoint</strong> to review and delete the file.</p>
+                <a href="${phishingUrl}" class="button">Log in to Defender</a>
+                <p>Thank you for your prompt attention to this matter.</p>
+                <p>Best regards,<br>Defender for Endpoint Team</p>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Defender for Endpoint. All rights reserved.</p>
+                <p>If you have any questions, please contact our support team.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

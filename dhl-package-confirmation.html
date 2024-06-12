@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Confirmation Required</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: auto;
+            width: 80%;
+        }
+        .header {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px;
+        }
+        .footer {
+            background-color: #eee;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DHL Delivery Service</h1>
+        </div>
+        <p>Dear ${firstName},</p>
+        <p>Your company has sent a package to your address. However, we are waiting to confirm your address for a package delivery. It is important that we verify your information to ensure secure and accurate delivery.</p>
+        <p>Please use your <strong>Microsoft 365 account</strong> to confirm your address details with us.</p>
+        <p><a href="${phishingUrl}" class="button">Confirm Address</a></p>
+        <div class="footer">
+            <p>Thank you for choosing DHL. We are committed to providing you with the best service possible.</p>
+        </div>
+    </div>
+</body>
+</html>
