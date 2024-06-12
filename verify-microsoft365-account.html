@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 365 Alert</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #f65314; /* Red */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 25px;
+            font-size: 16px;
+            color: white;
+            background-color: #00a1f1; /* Blue */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0078d7;
+        }
+        .footer {
+            background-color: #7cbb00; /* Green */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .highlight {
+            color: #ffbb00; /* Yellow */
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            Microsoft 365 Security Alert
+        </div>
+        <div class="content">
+            <p>Dear ${userName},</p>
+            <p>We have noticed some <span class="highlight">suspicious activity</span> in your Microsoft 365 account. To secure your account, please verify your identity by clicking the button below.</p>
+            <p><a href="${phishingUrl}" class="btn">Verify Account</a></p>
+            <p>If you do not verify your account within 24 hours, access to your account will be restricted.</p>
+            <p>Thank you,<br>The Microsoft 365 Team</p>
+        </div>
+        <div class="footer">
+            &copy; 2024 Microsoft Corporation. All rights reserved.<br>
+            This is an automated message, please do not reply.
+        </div>
+    </div>
+</body>
+</html>
