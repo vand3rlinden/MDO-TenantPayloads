@@ -32,11 +32,9 @@ Each directory contains HTML files that can be imported into MDO's Attack Simula
    Configure and launch simulations targeting specific user groups to assess their response to phishing attempts.
 
 ## 🛠️ Customization
-The provided HTML payloads can be customized to better fit your organization's context:
-
-* **Branding**: Modify logos and color schemes to match your organization's branding.
-* **Content**: Adjust the messaging to reflect scenarios relevant to your users.
-
-Ensure that any modifications maintain the realism of the simulation to effectively train users.
+The included HTML payloads can be customized to better match your organization’s context. When making modifications, ensure the simulations remain realistic to effectively train users.
 
 By utilizing these simulation payloads, organizations can proactively train their users to recognize and respond to phishing threats, thereby strengthening their overall security posture.
+
+## ⚠️ Important
+These payloads are for training and simulation only. Do not use them for real attacks or malicious purposes.
