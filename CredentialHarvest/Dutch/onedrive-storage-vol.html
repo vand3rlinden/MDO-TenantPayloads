@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .header {
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .header h2 {
+      margin: 0;
+      color: #0078d4;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .warning {
+      background: #fff4ce;
+      color: #333;
+      padding: 15px;
+      border-left: 5px solid #ffc107;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #0078d4;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h2>Microsoft OneDrive</h2>
+    </div>
+    <div class="content">
+      <p>Beste ${firstName},</p>
+      <div class="warning">
+        Jouw OneDrive storage is bijna vol. Op moment gebruik je <strong>99% van je beschikbare ruimte</strong>.
+      </div>
+      <p>Om problemen te voorkomen, bekijk je beschikbare ruimte en ruim z.s.m. op.</p>
+      <a href="${phishingUrl}" class="btn">Bekijk storage</a>
+    </div>
+    <div class="footer">
+      © 2025 Microsoft Corporation. One Microsoft Way, Redmond, WA 98052
+    </div>
+  </div>
+</body>
+</html>
