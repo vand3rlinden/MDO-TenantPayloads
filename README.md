@@ -39,7 +39,4 @@ The provided HTML payloads can be customized to better fit your organization's c
 
 Ensure that any modifications maintain the realism of the simulation to effectively train users.
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 By utilizing these simulation payloads, organizations can proactively train their users to recognize and respond to phishing threats, thereby strengthening their overall security posture.
