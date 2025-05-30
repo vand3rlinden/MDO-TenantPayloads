@@ -1,5 +1,5 @@
 # MDO-TenantPayloads
-This repository contains tenant-specific HTML payloads for use in Microsoft Defender for Office 365’s Attack Simulation Training (AST in MDO). It focuses on English and Dutch payloads. These templates are designed to help organizations simulate phishing attacks and train users to recognize and respond to such threats effectively. The repository will be continuously updated with new payloads.
+This repository contains tenant-specific HTML/CSS styled tenant payloads for use in Microsoft Defender for Office 365’s Attack Simulation Training (AST in MDO). It focuses on English and Dutch payloads. These templates are designed to help organizations simulate phishing attacks and train users to recognize and respond to such threats effectively. The repository will be continuously updated with new payloads.
 
 ## 📄 About
 The payloads in this repository are crafted to mimic real-world phishing scenarios, enabling administrators to conduct realistic simulations within their MDO environment. By deploying these simulations, organizations can assess user susceptibility to phishing and enhance their security awareness programs.
