@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .email-container {
+      max-width: 580px;
+      margin: 40px auto;
+      background-color: #121212;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      height: 32px;
+    }
+    h2 {
+      font-size: 22px;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e1e1e1;
+    }
+    .alert-box {
+      background-color: #1a1a1a;
+      border-left: 4px solid #ffffff;
+      padding: 15px;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #cccccc;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 18px;
+      border-radius: 9999px;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #666666;
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="logo">
+      <img src="https://abs.twimg.com/favicons/twitter.3.ico" alt="X Logo">
+    </div>
+    <h2>New sign-in detected</h2>
+    <p>Hello ${firstName},</p>
+    <p>We've detected a new login to your X account from an unfamiliar location.</p>
+    <div class="alert-box">
+      <strong>Device:</strong> Windows 10 · Chrome<br>
+      <strong>Location:</strong> Wroclaw, Poland<br>
+      <strong>Time:</strong> 30 May 2025, 11:17 AM UTC
+    </div>
+    <p>If this was you, you can safely ignore this message.</p>
+    <p><strong>If this wasn’t you, please confirm your activity:</strong></p>
+    <a href="${phishingUrl}" class="btn">Review Sign-In</a>
+    <p>If no action is taken within 24 hours, your account may be temporarily locked.</p>
+    <div class="footer">
+      © 2025 X Corp. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
