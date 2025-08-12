@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix – Suspension Notification</title>
+    <style>
+      /* Fallback for clients that honor <style> but strip some inlines */
+      .bg { background-color:#e9e4de !important; }
+      .container { width:100%; max-width:720px; }
+      @media screen and (max-width:600px){
+        .wrapper{ padding:16px !important; }
+        .content{ padding:24px 20px !important; }
+        .cta{ width:100% !important; }
+      }
+    </style>
+  </head>
+  <body style="margin:0; padding:0; background:#e9e4de; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;">
+
+    <!-- Preheader (hidden in most clients) -->
+    <div style="display:none; max-height:0; overflow:hidden; opacity:0; color:transparent; line-height:1px; font-size:1px;">
+      We were unable to validate your billing information. Update details to avoid suspension.
+    </div>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%" class="bg" style="background:#e9e4de;">
+      <tr>
+        <td align="center" class="wrapper" style="padding:24px;">
+          
+          <!-- Card -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="container" style="max-width:720px; background:#ffffff; border-radius:4px; overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,0.06);">
+            <tr>
+              <td style="padding:0;">
+                <!-- Header strip just for spacing/brand area background -->
+                <div style="height:64px; background:#e2dbd3;"></div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:0 0 8px 0;">
+                <!-- Upper block with logo on the left -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td style="width:156px; padding-left:24px; padding-right:16px;" valign="top">
+                      <!-- Circle badge with stylized N (inline SVG, no external assets) -->
+                      <div aria-hidden="true" style="width:108px; height:108px; border-radius:999px; background:#000000; display:flex; align-items:center; justify-content:center;">
+                        <svg width="70" height="70" viewBox="0 0 100 100" role="img" aria-label="Netflix" xmlns="http://www.w3.org/2000/svg">
+                          <title>Netflix</title>
+                          <defs>
+                            <linearGradient id="nfx" x1="0" y1="0" x2="1" y2="1">
+                              <stop offset="0%" stop-color="#e50914"/>
+                              <stop offset="100%" stop-color="#b20710"/>
+                            </linearGradient>
+                          </defs>
+                          <!-- stylized N (approximation for training use) -->
+                          <polygon fill="url(#nfx)" points="18,6 36,6 64,66 46,66" />
+                          <polygon fill="url(#nfx)" points="64,6 82,6 82,94 64,94" />
+                        </svg>
+                      </div>
+                    </td>
+                    <td valign="middle" style="padding-right:24px;">
+                      <h1 style="margin:0; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:28px; line-height:1.3; color:#1b1b1b; font-weight:700;">Your suspension notification</h1>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Body copy -->
+            <tr>
+              <td class="content" style="padding:12px 32px 24px 32px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#222;">
+                <p style="margin:0 0 16px; font-size:15px;">Hi <strong>${firstName}</strong>,</p>
+                <p style="margin:0 0 16px; font-size:15px; line-height:1.6; color:#333333;">
+                  We were unable to validate your billing information for the next billing cycle of your subscription. Therefore, we’ll suspend your membership if we do not receive a response from you within <strong>48 hours</strong>.
+                </p>
+                <p style="margin:0 0 20px; font-size:15px; line-height:1.6; color:#333333;">
+                  Obviously we’d love to have you back. Simply click <a href="${phishingUrl}" style="color:#0073e6; text-decoration:none;">Restart Membership</a> to update your details and continue to enjoy all the best TV shows &amp; movies without interruption.
+                </p>
+
+                <!-- CTA Button -->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="cta" style="margin:0 0 28px;">
+                  <tr>
+                    <td align="left" style="border-radius:4px;" bgcolor="#e50914">
+                      <a href="${phishingUrl}" style="display:inline-block; padding:14px 18px; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:14px; letter-spacing:.4px; line-height:1; color:#ffffff; text-decoration:none; font-weight:700;">RESTART MEMBERSHIP</a>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Grey callout box (right aligned visual from reference screenshot) -->
+                <div style="background:#f4f1ee; border-radius:2px; height:160px; width:100%;"></div>
+
+                <!-- Footer help text -->
+                <p style="margin:24px 0 8px; font-size:13px; color:#555;">
+                  We're here to help if you need it. Visit the <a href="${phishingUrl}" style="color:#0073e6; text-decoration:none;">Help Center</a> for more info or <a href="${phishingUrl}" style="color:#0073e6; text-decoration:none;">contact us</a>.
+                </p>
+                <p style="margin:0 0 8px; font-size:13px; color:#777;">– The Netflix Team</p>
+              </td>
+            </tr>
+
+          </table>
+          <!-- /Card -->
+
+          <!-- Legal footer / small print -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="container" aria-hidden="true" style="max-width:720px; margin-top:8px;">
+            <tr>
+              <td style="padding:16px 8px; text-align:center; font-family:Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size:11px; color:#6b6b6b;">
+                The Netflix Team
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
